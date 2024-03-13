@@ -1,5 +1,5 @@
 ---
-import rss from "@astrojs/rss";
+import rss, { RSSFeedItem } from "@astrojs/rss";
 
 const rawPosts = await Astro.glob("../posts/*.mdx");
 
@@ -8,18 +8,27 @@ const posts = rawPosts
   .filter((post) => !post.frontmatter.draft)
   .sort((a, b) => b.frontmatter.date - a.frontmatter.date);
 
+const feedItems: RSSFeedItem[] = [];
+
+for (const post of posts) {
+  feedItems.push({
+    title: post.frontmatter.title,
+    link: `https://ashentwisle.com/posts/${post.slug}`,
+    description: post.frontmatter.description,
+    pubDate: new Date(post.frontmatter.date),
+    enclosure: {
+      url: `https://ashentwisle.com/favicon.svg`,
+      type: "image/svg+xml",
+      length: 328,
+    },
+  });
+}
+
 return rss({
   title: "Ash's Blog",
   description:
     "Hi, I'm Ash! I'm a 2nd year Comp-Sci student who loves rust, linux, mechanical keyboards, toasters and blue ikea sharks :3",
   site: "https://ashentwisle.com",
-  items: [
-    ...posts.map((post) => ({
-      title: post.frontmatter.title,
-      pubDate: new Date(post.frontmatter.date).toUTCString(),
-      description: post.frontmatter.description,
-      link: `https://ashentwisle.com${post.url}`,
-    })),
-  ],
+  items: feedItems,
 });
 ---
