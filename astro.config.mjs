@@ -15,6 +15,6 @@ export default defineConfig({
     tailwind({ configFile: "./tailwind.config.cjs" }), 
     mdx({ shikiConfig: { theme: "one-dark-pro" } }), 
     partytown(), sitemap(), prefetch(), svelte()],
-  site: "https://hullcss.org",
+  site: "https://ashentwisle.com",
   adapter: cloudflare()
 });

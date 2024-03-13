@@ -1,11 +1,20 @@
-# HullCSS Website
+# README
 
-This is the source code for the HullCSS website. 
-It is built with Astro and is hosted on Cloudflare Pages.
+Hi, I'm Ash! (she/they)  A very ✨🏳️‍⚧️ queer 🏳️‍⚧️✨ 1st year Comp-Sci student 
+who loves rust, linux, mechanical keyboards and blue ikea sharks :3
 
-## License
+I like working on all projects, big and small. 
+From stuff that runs on small microcontrollers to large scale web applications in the cloud.
+I always love a challenge and learning about new languages, frameworks, tools and workflows.
+I'm currently learning rust and c# and tinkering with astro to create simple websites.
 
-This project is licensed under the [AGPL-3.0 License](https://www.gnu.org/licenses/agpl-3.0.html), 
-this can also be found in the `LICENSE.md` file in the root of the repository.  
+### Contact Me
 
+If you want to reach out, the best place to do so is [via email](/links/email). 
+If not, you *should* be able to reach out to me on [linkedin](/links/linkedin).
 
+If you are looking to hire me, feel free to take a look at [my CV](/links/cv).
+
+## My Toolkit
+
+*// TODO: add dotfiles, check back soon^tm*
