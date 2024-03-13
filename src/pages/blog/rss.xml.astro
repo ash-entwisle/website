@@ -1,5 +1,6 @@
 ---
-import rss, { RSSFeedItem } from "@astrojs/rss";
+import rss from "@astrojs/rss";
+import type { RSSFeedItem } from "@astrojs/rss";
 
 const rawPosts = await Astro.glob("../posts/*.mdx");
 
