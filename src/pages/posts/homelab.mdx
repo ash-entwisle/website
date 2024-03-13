@@ -1,0 +1,61 @@
+---
+# Edit all of this
+title: "Homelab TLDR"
+author: "Ash Entwisle"
+link: "https://github.com/ash-entwisle"
+date: "2024-02-23"
+description: "
+A brief overview of my homelab, what it's used for, and how it's set up.
+"
+draft: false
+
+# DO NOT EDIT
+layout: ../../layouts/Blogpost.astro
+---
+
+## Introduction
+
+For the past 6 months, I have been playing around with my homelab. 
+Nothing special, just a small minipc running a few services that i use supprisingly often. 
+
+## Hardware
+
+After getting a notification that Minisforum had a sale, I decided to pick up one of their minipc's. 
+Its a small form factor pc with a Ryzen 7 7940HX(?) with a spare drive from my old pc and 32gb of ram.
+It is a bit overkill for what I use it for, but it gives me room to mess around with stuff. 
+
+### Performance
+
+As i mentioned, its pretty overkill for what I use it for. 
+While running all of my current services *and* streaming a 4k movie from jellyfin,
+ive not gotten it to use more then 4GB of ram.
+Needless to say, I have a fair bit of headroom to play with.
+
+## Software
+
+### OS
+
+For the OS, I decided to go with OpenSuse Tumbleweed. 
+Ive been playing around with it on an old laptop and have found it to be supprisingly stable for a rolling release distro. 
+
+### Services
+
+I only have a few services currently running. 
+I do however plan on increasing this list in the future, just depends what catches my eye.
+So far, I have:
+
+- Jellyfin
+- NFS
+- [OpenBot](https://github.com/ash-entwisle/OpenBot)
+
+In future, I plan on setting up gitea as a local mirror of my github 
+as well as a few game servers such as minecraft and factorio.
+and anything else that looks interesting.
+
+### Other stuff
+
+I also have the lab set up as a single node kubernetes cluster as a way to learn more about k8s.
+I also use it as a mock-production environment to test out stuff for some personal projects 
+*(hopefully something cool coming soon^tm)*
+
+
