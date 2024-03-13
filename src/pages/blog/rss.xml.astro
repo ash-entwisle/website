@@ -1,14 +1,12 @@
 ---
 import rss from "@astrojs/rss";
 
-const rawPosts = await Astro.glob("./posts/*.mdx");
+const rawPosts = await Astro.glob("../posts/*.mdx");
 
 // remove drafts and sort by date (date being a parsed int rather than date object)
 const posts = rawPosts
   .filter((post) => !post.frontmatter.draft)
   .sort((a, b) => b.frontmatter.date - a.frontmatter.date);
-
-console.log(posts);
 
 return rss({
   title: "Ash's Blog",
