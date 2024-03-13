@@ -14,7 +14,7 @@ const feedItems: RSSFeedItem[] = [];
 for (const post of posts) {
   feedItems.push({
     title: post.frontmatter.title,
-    link: `https://ashentwisle.com/posts/${post.slug}`,
+    link: `https://ashentwisle.com/posts/${post.url}`,
     description: post.frontmatter.description,
     pubDate: new Date(post.frontmatter.date),
     enclosure: {
