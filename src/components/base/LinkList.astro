@@ -1,6 +1,6 @@
 ---
 export interface Props {
-  title:  string;
+  title?:  string;
   links:  Link[];
 }
 
@@ -14,7 +14,7 @@ const props = Astro.props;
 ---
 
 <div class="link_list">
-  <h2>{ props.title }</h2>
+  { props.title && <h2>{ props.title }</h2> }
   <ul>
     { props.links.map((link) => (
       <li>

@@ -1,10 +1,10 @@
 ---
-import Center from "../components/base/Center.astro";
-import Icon from "../components/base/Icon.astro";
-import Boilerplate from "../layouts/Boilerplate.astro";
+import Center from "../../components/base/Center.astro";
+import Icon from "../../components/base/Icon.astro";
+import Boilerplate from "../../layouts/Boilerplate.astro";
 
 
-const rawPosts = await Astro.glob("./posts/*.mdx");
+const rawPosts = await Astro.glob("../posts/*.mdx");
 const search = Astro.url.searchParams.get("q") || "";
 
 const posts = rawPosts
@@ -50,8 +50,8 @@ const keywords = [
 ---
 
 <Boilerplate
-  title="Hull Computer Science Society"
-  description="This is the Hull Computer Science Society website."
+  title="Ash's Blog"
+  description="Welcome to my blog!"
   keywords={keywords}
   header={true}
   footer={true}

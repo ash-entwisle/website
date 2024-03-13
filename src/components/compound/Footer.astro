@@ -1,85 +1,41 @@
 ---
-import LinkList from "../base/LinkList.astro"
-import Copywright from "./Copywright.astro"
-
+import LinkList from "../base/LinkList.astro";
+import MOTD from "../base/MOTD.astro";
+import Copywright from "./Copywright.astro";
 ---
 
 <footer>
-
-
-
-
-<LinkList
-  title="Quick Links"
-  links={[
-    { 
-      name: "Home", 
-      href: "/" 
-    }, { 
-      name: "About", 
-      href: "/#about" 
-    }, { 
-      name: "Contact", 
-      href: "/contact" 
-    }, { 
-      name: "Blog", 
-      href: "/blog" 
-    },
-  ]}
-/>
-
-<LinkList
-  title="Important"
-  links={[{
-      name: "Link Tree",
-      href: "links"
-    }, { 
-      name: "Hull University", 
-      href: "https://www.hull.ac.uk" 
-    }, { 
-      name: "Students Union", 
-      href: "https://hulluniunion.com" 
-    }, { 
-      name: "Terms of Service", 
-      href: "/legal" 
-    },
-  ]}
-/>  
-
-<LinkList
-  title="Social"
-  links={[
-    { 
-      name: "Discord",
-      href: "/links/discord"
-    }, {
-      name: "GitHub",
-      href: "/links/github"
-    }, {
-      name: "Instagram",
-      href: "/links/instagram"
-    }, {
-      name: "HUSU",
-      href: "/links/husu"
-    },
-  ]}
-/>
-
-<div class="info">
-
-  <div class="misc">
-    <h2>#HullCSS</h2>
-    <p>
-      Built #withastro and &lt;3 by Ash Entwisle for HullCSS
-    </p>
+  <div class="footer_left">
+    <LinkList
+      links={[
+        {
+          name: "Email",
+          href: "/links/email",
+        },
+        {
+          name: "GitHub",
+          href: "/links/github",
+        },
+        {
+          name: "LinkedIn",
+          href: "/links/linkedin",
+        },
+        {
+          name: "RSS",
+          href: "/links/rss",
+        },
+      ]}
+    />
+    <span class="spacer"> | </span>
+    <Copywright
+      name="Ash Entwisle"
+      year={2022}
+      href="https://ashentwisle.com"
+    />
   </div>
-    
-  <Copywright
-    name="HullCSS"
-    year={2018}
-    href="https://hullcss.org"
-  />
-
-</div>
-
+  <div class="footer_right">
+    <div class="footer_motd">
+      <MOTD />
+    </div>
+  </div>
 </footer>

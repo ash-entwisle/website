@@ -1,7 +1,7 @@
 @import '../colours.scss';
 
 header {
-  height: 60px;
+  height: 65px;
 
   display: flex;
   flex-direction: row;
@@ -17,7 +17,7 @@ header {
   .image {
 
     img {
-      height: 50px;
+      height: 65px;
     }
   }
 
@@ -36,7 +36,7 @@ header {
     }
 
     // if less than 550px width, hide the h1
-    @media (max-width: 550px) {
+    @media (max-width: 300px) {
       #favicon {
         display: block;
       }
@@ -66,8 +66,8 @@ header {
 
       color: $col-mono-1;
 
-      font-size: 1em;
-      font-weight: 500;
+      font-size: 1.15em;
+      font-weight: 600;
 
       text-decoration: none;
 
@@ -87,8 +87,8 @@ header {
     }
   }
 
-  // if less than 400, hide left and center the right
-  @media (max-width: 400px) {
+  // if less than 300, hide left and center the right
+  @media (max-width: 375px) {
 
     justify-content: center;
     align-items: center;
