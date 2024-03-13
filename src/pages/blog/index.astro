@@ -1,6 +1,7 @@
 ---
 import Center from "../../components/base/Center.astro";
 import Icon from "../../components/base/Icon.astro";
+import BlogPostCard from "../../components/compound/BlogPostCard.astro";
 import Boilerplate from "../../layouts/Boilerplate.astro";
 
 
@@ -24,29 +25,7 @@ const filteredPosts = posts.filter((post) => {
         .includes(search.toLowerCase());
 });
 
-
-
-
-
-
-
-const keywords = [
-  "hull",
-  "computer",
-  "science",
-  "society",
-  "hcss",
-  "hcssoc",
-  "hull",
-  "university",
-  "students",
-  "student",
-  "union",
-  "hull",
-  "css",
-  "society",
-  "computer",
-];
+const keywords = [];
 ---
 
 <Boilerplate
@@ -70,22 +49,15 @@ const keywords = [
     <div class="blog_posts">
       {
         filteredPosts.map((post) => (
-          <div class="blog_post" id={ post.url.split("/").pop() }>
-            <h2>
-              <span class="blog_post_hash">#</span>
-              <a href={post.url}>
-                <span class="blog_post_title">{post.data.title}</span>
-                { /* <span class="blog_post_link"><Icon icon={{code: "f0c1", bold: true}}/></span> */ }
-              </a>
-            </h2>
-            <p>
-              {post.data.description}
-            </p>
-            <h3><em>
-              <span class="blog_post_author"> By: <a href={post.data.link}> @{post.data.author.replace(" ", "_").toLowerCase()}</a> </span>
-              <span class="blog_post_date"> ({post.data.date}) </span>
-            </em></h3>
-          </div>
+          <BlogPostCard
+            id={post.url.split("/").pop()}
+            url={post.url}
+            title={post.data.title}
+            desc={post.data.description}
+            author={post.data.author}
+            link={post.data.link}
+            date={post.data.date}
+          />
         ))
       }
     </div>

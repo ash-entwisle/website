@@ -111,6 +111,14 @@ main {
   }
   markdown {
 
+    p {
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    h2 {
+      padding-top: 12.5px;
+    }
     max-width: 700px
   }
 }

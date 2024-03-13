@@ -1,0 +1,38 @@
+---
+export interface props {
+  id: string;
+  url: string;
+  title: string;
+  desc: string;
+  author: string;
+  link: string;
+  date: string;
+}
+
+const props = Astro.props;
+---
+
+<div class="blog_post_card" id={props.id}>
+  <h2>
+    <span class="blog_post_hash">#</span>
+    <a href={props.url}>
+      <span class="blog_post_title">{props.title}</span>
+      {
+        /* <span class="blog_post_link"><Icon icon={{code: "f0c1", bold: true}}/></span> */
+      }
+    </a>
+  </h2>
+  <p>
+    {props.desc}
+  </p>
+  <h3>
+    <em>
+      <span class="blog_post_author">
+        By: <a href={props.link}>
+          @{props.author.replace(" ", "_").toLowerCase()}</a
+        >
+      </span>
+      <span class="blog_post_date"> ({props.date}) </span>
+    </em>
+  </h3>
+</div>

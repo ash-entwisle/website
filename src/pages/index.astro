@@ -1,25 +1,33 @@
 ---
 import Boilerplate from "../layouts/Boilerplate.astro";
 
+import BlogPostCard from "../components/compound/BlogPostCard.astro";
+
 import TextTyper from "../components/dynamic/TextTyper.svelte";
 
-const keywords = [
-  "hull",
-  "computer",
-  "science",
-  "society",
-  "hcss",
-  "hcssoc",
-  "hull",
-  "university",
-  "students",
-  "student",
-  "union",
-  "hull",
-  "css",
-  "society",
-  "computer",
-];
+const rawPosts = await Astro.glob("./posts/*.mdx");
+
+const posts = rawPosts
+  .filter((post) => !post.frontmatter.draft)
+  .map((post) => {
+    return {
+      url: post.url ?? "/",
+      data: post.frontmatter,
+    };
+  });
+
+// sort by date, pick the first 5
+// treat date as integer
+// return post object
+const recentPosts = posts
+  .sort((a, b) => {
+    return parseInt(b.data.date) - parseInt(a.data.date);
+  })
+  .slice(0, 5);
+
+console.log(recentPosts);
+
+const keywords = [];
 ---
 
 <Boilerplate
@@ -30,15 +38,38 @@ const keywords = [
   footer={true}
 >
   <div id="landing_main">
-    <div class="about">
+    <div class="landing">
       <h1>
         <TextTyper text="Hello World, I'm Ash!" client:visible />
       </h1>
       <p>
-        Feel free to check out my projects and my blog. feel free to subscribe
-        to my RSS feed.
+        Feel free to check out my projects and my blog or to subscribe to my RSS
+        feed.
       </p>
       <p>If you want to get in touch, feel free to reach out!</p>
+    </div>
+    <div class="recent">
+      <h2>Recent Posts: </h2>
+      <div class="posts">
+        {
+          recentPosts.map((post) => (
+            <BlogPostCard
+              id={post.url.split("/").pop()}
+              url={post.url}
+              title={post.data.title}
+              desc={post.data.description}
+              author={post.data.author}
+              link={post.data.link}
+              date={post.data.date}
+            />
+          ))
+        }
+      </div>
+      <div class="more">
+        <p>
+          <em> (click <a href="/blog">here</a> to see more posts) </em>
+        </p>
+      </div>
     </div>
   </div>
 </Boilerplate>
