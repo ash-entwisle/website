@@ -1,19 +1,13 @@
 {
-    "name": "HullCSS Website and Blog",
-    "short_name": "HullCSS",
+    "name": "Ash Entwisle's Website and Blog",
+    "short_name": "ashs_site",
     "start_url": "/",
     "display": "standalone",
     "background_color": "#282c34",
     "theme_color": "#98c379",
     "lang": "en-GB",
-    "description": "HullCSS is the computers science society at the University of Hull. We are a group of students who are passionate about technology and want to share our knowledge with others.",
+    "description": "Hi, I'm Ash! I'm a 2nd year Comp-Sci student who loves rust, linux, mechanical keyboards, toasters and blue ikea sharks :3",
     "icons": [
-        {
-            "src": "logo.svg",
-            "sizes": "any",
-            "type": "image/svg+xml",
-            "purpose": "any"
-        },
         {
             "src": "favicon.svg",
             "sizes": "any",
