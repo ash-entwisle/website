@@ -62,7 +62,7 @@ export default function motd() {
         "I see the crystal raindrops fall",
         "Ive got no grey poupon",
         "BRB, rewriting this in Rust",
-        "C# == Microsoft Java",
+        "C# === Microsoft Java",
         "C++ is just C with classes",
         "C++ is like an onion, it has layers and the more you peel the more you cry",
         "UseEffect, more like UseFootGun amirite?",
