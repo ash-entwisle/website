@@ -94,6 +94,7 @@ export default function motd() {
         "yaga uuur a ah biga inga uuur rata",
         "I probs need to fix my RSS feed...",
         "plash banitoot",
+        "Java Sux!!!"
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
