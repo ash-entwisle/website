@@ -1,32 +1,33 @@
+
 export default function motd() {
     let motds = [
-        "\"Hello, World!\"",                                                    
-        "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",
-        "A wood chuck would chuck as much wood as a wood chuck could chuck if a wood chuck could chuck wood.",
-        "Learning WASM...",
-        "stack overflow => ctrl + c => ctrl + v",
-        "I'm a software developer, not a magician.",
-        "Trans Rights !!",
-        "I Hate Mondays",
-        "Rust is Love, Rust is Life",
-        "areeee teeeee effffff emmmmm",
-        ":(){:|:&};:",
-        "sudo rm -rf /* --no-preserve-root",
-        "Hater of JS",
-        "TypeScipt is just a bandaid",
-        "I use Arch btw",
-        "you gotta be crazy to use modal editors... I speak from experience",
-        "modal editing is the future",
-        "DROP table Production;",
-        "The only good ammount of JavaScript is no JavaScript",
-        "Why use JS, when you can use Rust?",
-        "U w U",
-        "according to all known laws of aviation, there is no way a bee should be able to fly",
-        "somebody once told me the world is gonna roll me",
-        "me when css: (╯°□°)╯︵ ┻━┻",
-        "It works on my machine ¯\\_(ツ)_/¯",
-        "LGTM !!",
-        "when someone pushes directly to main: ಠ益ಠ",
+        "\"Hello, World!\"",                                                                                    
+        "How much wood would a woodchuck chuck if a woodchuck could chuck wood?",                               
+        "A wood chuck would chuck as much wood as a wood chuck could chuck if a wood chuck could chuck wood.",  
+        "Learning WASM...",                                                                                        
+        "stack overflow => ctrl + c => ctrl + v",                                                               // average programmng workflow
+        "I'm a software developer, not a magician.",                                                            
+        "Trans Rights !!",                                                                                      // should be obvious       
+        "I Hate Mondays",                                                                                       // yes I am orang cat that eat lasag
+        "Rust is Love, Rust is Life",                                                                           // rust my beloved <3
+        "areeee teeeee effffff emmmmm",                                                                         
+        ":(){:|:&};:",                                                                                          // fork bombs yr machine (cutely)
+        "sudo rm -rf /* --no-preserve-root",                                                                    
+        "Hater of JS",                                                                                          
+        "TypeScipt is just a bandaid",                                                                          
+        "I use Arch btw",                                                                                       // an obligatory statement     
+        "you gotta be crazy to use modal editors... I speak from experience",                                   // me editing this in helix be like
+        "modal editing is the future",                                                                          
+        "DROP table Production;",                                                                               // gitlab be like
+        "The only good ammount of JavaScript is no JavaScript",                                                 
+        "Why use JS, when you can use Rust?",                                                                   // rust my beloved <3  
+        "U w U",                                                                                                
+        "according to all known laws of aviation, there is no way a bee should be able to fly",                 // its wings are too small to get its fat little body off the ground
+        "somebody once told me the world is gonna roll me",                                                     // I ain't the sharpest tool in the shed
+        "me when css: (╯°□°)╯︵ ┻━┻",                                                                           // POV: a backend dev trying to style a button
+        "It works on my machine ¯\\_(ツ)_/¯",                                                                   // me in db&n
+        "LGTM !!",                                                                                              
+        "when someone pushes directly to main: ಠ益ಠ",                                                           
         "I'm not a robot",
         "404: Motd not found",
         "You like Jazz?",
@@ -50,7 +51,7 @@ export default function motd() {
         "Ash Wuz Ere",
         "Im running out of ideas for these, feel free to email me some suggestions",
         "beware of the pipeline...",
-        "Ubuntu => Debian => Manjaro => Arch",
+        "Ubuntu => Debian => Manjaro => Arch => NixOS",
         "Have you heard?",
         "The bird is the word",
         "The quick brown fox jumps over the lazy dog",
@@ -92,11 +93,21 @@ export default function motd() {
         "418: This machine is not up to ISO 3103",
         "oh my god its korn",
         "yaga uuur a ah biga inga uuur rata",
-        "I probs need to fix my RSS feed...",
+        // "I probs need to fix my RSS feed...", // its fixed now :3
+        "RSS feed should be fixed now ^tm",
         "plash banitoot",
-        "Java Sux!!!"
+        "Java Sux!!!",
+        "Software version: 7.0",
+        "Did you think you had us fooled?", 
+        "Were all jack the lads with bad habits",
+        "Yeah, well, I'm gonna go build my own theme park...",
+        "gotta love mhpanks",
+        "I'M UP NOW!",
+        "Owls are dumber than they look",
+        "5 BLÄHAJ's and counting",
+        "Sure, its a calming notion, perpetual in motion",
+        "you would not believe your eyes, if ten million fireflies",
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
-    //return "Dont hate the player, Dont hate the game, hate the troop man we take all blame";
 }
