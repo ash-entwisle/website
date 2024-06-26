@@ -107,7 +107,8 @@ export default function motd() {
         "5 BLÄHAJ's and counting",
         "Sure, its a calming notion, perpetual in motion",
         "you would not believe your eyes, if ten million fireflies",
-        "times Ash has installed linux forgetting to install network drivers: 6"
+        "times Ash has installed linux forgetting to install network drivers: 6",
+        "Culture shouldn't exist only for those who can afford it - @HakitaDev"
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
