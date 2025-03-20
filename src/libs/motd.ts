@@ -108,7 +108,10 @@ export default function motd() {
         "Sure, its a calming notion, perpetual in motion",
         "you would not believe your eyes, if ten million fireflies",
         "times Ash has installed linux forgetting to install network drivers: 6",
-        "Culture shouldn't exist only for those who can afford it - @HakitaDev"
+        "Culture shouldn't exist only for those who can afford it - @HakitaDev",
+        "Impoppable",
+        "Gold is a great colour - but it should only be used for ceremonial contexts.",
+        "Chartreuce and Blue"
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
