@@ -101,7 +101,6 @@ export default function motd() {
         "Did you think you had us fooled?", 
         "Were all jack the lads with bad habits",
         "Yeah, well, I'm gonna go build my own theme park...",
-        "gotta love mhpanks",
         "I'M UP NOW!",
         "Owls are dumber than they look",
         "5 BLÄHAJ's and counting",
