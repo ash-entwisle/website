@@ -110,7 +110,8 @@ export default function motd() {
         "Culture shouldn't exist only for those who can afford it - @HakitaDev",
         "Impoppable",
         "Gold is a great colour - but it should only be used for ceremonial contexts.",
-        "Chartreuce and Blue"
+        "Chartreuce and Blue",
+        "His name is shortbread... Biiiiiitch"
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
