@@ -113,7 +113,7 @@ export default function motd() {
         "Chartreuce and Blue",
         "His name is shortbread... Biiiiiitch",
         "In Wobus We Twust", // http://www.vaporia.com/
-        "Welcome to Secure Digital Memes!"
+        "Welcome to Secure Digital Memes!" 
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
