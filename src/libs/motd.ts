@@ -112,7 +112,8 @@ export default function motd() {
         "Gold is a great colour - but it should only be used for ceremonial contexts.",
         "Chartreuce and Blue",
         "His name is shortbread... Biiiiiitch",
-        "In Wobus We Twust" // http://www.vaporia.com/
+        "In Wobus We Twust", // http://www.vaporia.com/
+        "Welcome to Secure Digital Memes!"
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
