@@ -51,7 +51,7 @@ export default function motd() {
         "Ash Wuz Ere",
         "Im running out of ideas for these, feel free to email me some suggestions",
         "beware of the pipeline...",
-        "Ubuntu => Debian => Manjaro => Arch => NixOS",
+        "Ubuntu => Debian => Manjaro => Arch => NixOS => arch",
         "Have you heard?",
         "The bird is the word",
         "The quick brown fox jumps over the lazy dog",
@@ -82,8 +82,8 @@ export default function motd() {
         "posture check",
         "hydration check",
         "[toothless dancing to driftvale city]",
-        "proot",
-        "proot dot dev",
+        // "proot",
+        // "proot dot dev",
         "toaster go brrrr",
         "laughs in toaster",
         "toaster",
@@ -113,7 +113,9 @@ export default function motd() {
         "Chartreuce and Blue",
         "His name is shortbread... Biiiiiitch",
         "In Wobus We Twust", // http://www.vaporia.com/
-        "Welcome to Secure Digital Memes!" 
+        "Welcome to Secure Digital Memes!",
+        "Plimber", // RIP Plimby, no.1 burper and goated cs streamer
+        "3 (years) on E", // vulf reference :3
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
