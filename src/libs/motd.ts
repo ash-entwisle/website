@@ -116,6 +116,7 @@ export default function motd() {
         "Welcome to Secure Digital Memes!",
         "Plimber", // RIP Plimby, no.1 burper and goated cs streamer
         "3 (years) on E", // vulf reference :3
+        "The humble fish", // smth smth will
     ];
     motds.push(`There are ${motds.length + 1} MOTDs!`);
     return motds[Math.floor(Math.random() * motds.length)];
