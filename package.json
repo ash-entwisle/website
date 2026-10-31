@@ -1,0 +1,28 @@
+{
+  "name": "web",
+  "type": "module",
+  "version": "0.0.1",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "private": true,
+  "workspaces": [
+    "sites/*"
+  ],
+  "scripts": {
+    "dev:root": "npm run dev --workspace=root",
+    "dev:cdn": "npm run dev --workspace=cdn",
+    "dev:links": "npm run dev --workspace=links",
+    "dev:www": "npm run dev --workspace=www",
+
+    "build:root": "npm run build --workspace=root",
+    "build:cdn": "npm run build --workspace=cdn",
+    "build:links": "npm run build --workspace=links",
+    "build:www": "npm run build --workspace=www",
+
+    "build": "npm run build --workspaces"
+  },
+  "dependencies": {
+    "astro": "^7.4.4"
+  }
+}
