@@ -1,9 +1,0 @@
----
-import { Config } from "../../../../src/config";
-
-const { path } = Astro.params;
-const website = Config.websites?.find((item) => item.link === "links");
-const destination = new URL( path ? `/${path}` : "/", website?.href);
-
-return Astro.redirect(destination.toString(), 301);
----
