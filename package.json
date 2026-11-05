@@ -12,7 +12,12 @@
     "deploy:cdn": "wrangler deploy -c src/services/cdn/wrangler.jsonc --minify",
     "deploy:root": "wrangler deploy -c src/services/root/wrangler.jsonc --minify",
     "deploy:www": "wrangler deploy -c src/services/www/wrangler.jsonc --minify",
-    "deploy:links": "wrangler deploy -c src/services/links/wrangler.jsonc --minify"
+    "deploy:links": "wrangler deploy -c src/services/links/wrangler.jsonc --minify",
+    "preview:api": "wrangler preview -c src/services/api/wrangler.jsonc",
+    "preview:cdn": "wrangler preview -c src/services/cdn/wrangler.jsonc",
+    "preview:root": "wrangler preview -c src/services/root/wrangler.jsonc",
+    "preview:www": "wrangler preview -c src/services/www/wrangler.jsonc",
+    "preview:links": "wrangler preview -c src/services/links/wrangler.jsonc"
   },
   "dependencies": {
     "hono": "^4.13.16"
