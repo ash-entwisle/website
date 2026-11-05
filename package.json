@@ -3,6 +3,7 @@
   "type": "module",
   "scripts": {
 
+    "build": "node ./src/utils/buildgen.ts",
     "dev:api": "wrangler dev -c src/services/api/wrangler.jsonc",
     "dev:cdn": "wrangler dev -c src/services/cdn/wrangler.jsonc",
     "dev:root": "wrangler dev -c src/services/root/wrangler.jsonc",
