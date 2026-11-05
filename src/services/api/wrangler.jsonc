@@ -1,6 +1,6 @@
 {
   "$schema": "../../../node_modules/wrangler/config-schema.json",
-  "name": "api.entwisle.dev",
+  "name": "dev-entwisle-api",
   "main": "index.ts",
   "compatibility_date": "2026-11-05"
   // "compatibility_flags": [

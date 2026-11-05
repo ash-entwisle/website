@@ -1,8 +1,9 @@
 {
   "$schema": "../../../node_modules/wrangler/config-schema.json",
-  "name": "cdn.entwisle.dev",
+  "name": "dev-entwisle-cdn",
   "main": "index.ts",
-  "compatibility_date": "2026-11-05"
+  "compatibility_date": "2026-11-05",
+  "assets": { "directory": "../../../public/cdn" }
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],

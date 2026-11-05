@@ -1,11 +1,12 @@
 import { Hono } from 'hono'
-import { Config } from '../../../config';
+import { Config } from '../../config';
 
 const app = new Hono()
 
+
 app.get('*', (c) => {
-  const url = c.req.url
-  const newUrl = `https://www.${Config.website.base}${url}`
+  const path = c.req.path
+  const newUrl = `https://${Config.website.base}${path}`
   return c.redirect(newUrl, 301)
 });
 

@@ -1,14 +1,14 @@
 import { Hono } from 'hono'
-import { Config } from '../../../config';
+import redir from '../../utils/redir'
 
 const app = new Hono()
 
+// make a hello, world at root
 
+app.get('/', (c) => {
+  return c.text('Hello, world! This will soon be my new linktree')
+})
 
-app.get('*', (c) => {
-  const url = c.req.url
-  const newUrl = `https://www.${Config.website.base}${url}`
-  return c.redirect(newUrl, 301)
-});
+app.route('', redir)
 
 export default app

@@ -1,0 +1,152 @@
+/* urbanist black */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 900;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-BlackItalic.woff2") format("woff2");
+}
+
+/* bold */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 700;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-BoldItalic.woff2") format("woff2");
+}
+
+/* extra bold */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 800;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-ExtraBoldItalic.woff2") format("woff2");
+}
+
+/* extra light */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 200;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 200;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-ExtraLightItalic.woff2") format("woff2");
+}
+
+/* light */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 300;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-LightItalic.woff2") format("woff2");
+}
+
+/* medium */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 500;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-MediumItalic.woff2") format("woff2");
+}
+
+/* regular */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-Italic.woff2") format("woff2");
+}
+
+/* semi bold */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-SemiBoldItalic.woff2") format("woff2");
+}
+
+/* thin */
+@font-face {
+    font-family: "Urbanist";
+    font-style: normal;
+    font-weight: 100;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    font-style: italic;
+    font-weight: 100;
+    font-display: swap;
+    src: url("/fonts/urbanist/Urbanist-ThinItalic.woff2") format("woff2");
+}
