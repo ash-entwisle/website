@@ -1,26 +1,23 @@
 {
-  "name": "websites",
-  "version": "1.0.0",
-  "private": true,
-  "workspaces": [
-    "sites/*"
-  ],
+  "name": "website",
+  "type": "module",
   "scripts": {
-    "dev:api": "npm run dev -w @sites/api",
-    "dev:cdn": "npm run dev -w @sites/cdn",
-    "dev:root": "npm run dev -w @sites/root",
-    "dev:www": "npm run dev -w @sites/www",
-    "dev:links": "npm run dev -w @sites/links",
-    "build": "npm run build --workspaces --if-present",
-    "typecheck": "npm run typecheck --workspaces --if-present",
-    "deploy:api": "npm run deploy -w @sites/api",
-    "deploy:cdn": "npm run deploy -w @sites/cdn",
-    "deploy:root": "npm run deploy -w @sites/root",
-    "deploy:www": "npm run deploy -w @sites/www",
-    "deploy:links": "npm run deploy -w @sites/links"
+
+    "dev:api": "wrangler dev -c src/services/api/wrangler.jsonc",
+    "dev:cdn": "wrangler dev -c src/services/cdn/wrangler.jsonc",
+    "dev:root": "wrangler dev -c src/services/root/wrangler.jsonc",
+    "dev:www": "wrangler dev -c src/services/www/wrangler.jsonc",
+    "dev:links": "wrangler dev -c src/services/links/wrangler.jsonc",
+    "deploy:api": "wrangler deploy -c src/services/api/wrangler.jsonc --minify",
+    "deploy:cdn": "wrangler deploy -c src/services/cdn/wrangler.jsonc --minify",
+    "deploy:root": "wrangler deploy -c src/services/root/wrangler.jsonc --minify",
+    "deploy:www": "wrangler deploy -c src/services/www/wrangler.jsonc --minify",
+    "deploy:links": "wrangler deploy -c src/services/links/wrangler.jsonc --minify"
   },
   "dependencies": {
-    "hono": "^4.13.16",
-    "htmx.org": "^2.0.11"
+    "hono": "^4.13.16"
+  },
+  "devDependencies": {
+    "wrangler": "^4.110.0"
   }
 }

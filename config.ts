@@ -1,4 +1,4 @@
-import type { TConfig } from "./src/types.ts";
+import type { TConfig } from "./src/types/config.ts";
 
 export const Config: TConfig = {
   title: "Hi, I'm Ash!",
