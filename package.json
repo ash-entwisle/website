@@ -18,7 +18,9 @@
     "preview:cdn": "wrangler preview -c src/services/cdn/wrangler.jsonc",
     "preview:root": "wrangler preview -c src/services/root/wrangler.jsonc",
     "preview:www": "wrangler preview -c src/services/www/wrangler.jsonc",
-    "preview:links": "wrangler preview -c src/services/links/wrangler.jsonc"
+    "preview:links": "wrangler preview -c src/services/links/wrangler.jsonc",
+
+    "deploy": "npm run deploy:api && npm run deploy:cdn && npm run deploy:root && npm run deploy:www && npm run deploy:links"
   },
   "dependencies": {
     "hono": "^4.13.16"
