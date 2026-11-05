@@ -1,11 +1,25 @@
 import { Hono } from 'hono'
 
+import blog from './blog'
+import links from './links'
+import posts from './posts'
+import rss from './rss'
+
 const app = new Hono()
 
 
 app.get('/', (c) => {
   return c.text('Hello, world! This will soon be my new website!')
 })
+
+
+app.route('links', links);
+app.route('blog', blog);
+app.route('posts', posts);
+app.route('', rss)
+
+
+
 
 app.get('/favicon.ico', (c) => {
   return c.redirect('https://cdn.entwisle.dev/favicon.ico', 301)
