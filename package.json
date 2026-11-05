@@ -11,8 +11,6 @@
     "dev:root": "npm run dev -w @sites/root",
     "dev:www": "npm run dev -w @sites/www",
     "dev:links": "npm run dev -w @sites/links",
-
-
     "build": "npm run build --workspaces --if-present",
     "typecheck": "npm run typecheck --workspaces --if-present",
     "deploy:api": "npm run deploy -w @sites/api",
@@ -22,6 +20,7 @@
     "deploy:links": "npm run deploy -w @sites/links"
   },
   "dependencies": {
-    "hono": "^4.13.16"
+    "hono": "^4.13.16",
+    "htmx.org": "^2.0.11"
   }
 }
