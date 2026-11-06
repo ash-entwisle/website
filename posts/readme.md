@@ -3,7 +3,8 @@ title: "README.md"
 author: "Ash Entwisle"
 link: "https://links.entwisle.dev"
 date: "2026-11-05"
-description: "A quick introduction of myself <3"
+description: "A quick introduction of myself :3"
+tags: ["introduction", "about-me"]
 draft: false
 ---
 # Hello World, I'm Ash! 

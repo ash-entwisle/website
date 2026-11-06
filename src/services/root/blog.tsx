@@ -6,7 +6,7 @@ let app = new Hono()
 
 app.get('/', async (c) => {
 
-  // TODO: get xml feed, and dynamically create list of blogposts and have a filter system for tags and categories, and a search bar.
+  // TODO: get xml feed, and dynamically create list of blogposts and have a filter system for tags and categories, and a search bar?
 
   const res = await fetch(`https://${Config.website.base}/rss.xml`);
   return c.body(await res.text(), 200, {

@@ -1,4 +1,5 @@
 import { Hono } from "hono"
+import { posts } from "../../utils/posts";
 
 
 let app = new Hono();
@@ -7,6 +8,25 @@ let app = new Hono();
 app.get("/rss.xml", (c) => {
 
   const tags = c.req.query("tags")?.split(",").map((t) => t.trim().toLowerCase()) ?? [];
+
+
+  // get posts object from utils/posts.ts, filter by tags if any, and generate rss xml from it
+
+  const p = posts.filter((post) => {
+    if (post.frontmatter.draft) return false;
+    if (tags.length === 0) return true;
+    const postTags = post.frontmatter.tags.map((t) => t.toLowerCase());
+    return tags.every((tag) => postTags.includes(tag));
+  });
+
+  const items = p.map((post) => {
+  return `<item>
+      <title>${post.frontmatter.title}</title>
+      <link>https://entwisle.dev/blog/${post.slug}</link>
+      <description>${post.frontmatter.description}</description>
+      <pubDate>${new Date(post.frontmatter.date).toUTCString()}</pubDate>
+    </item>`;
+  }).join("\n");
 
   const rss = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
@@ -17,6 +37,7 @@ app.get("/rss.xml", (c) => {
       <language>en-us</language>
       <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
       <pubDate>${new Date().toUTCString()}</pubDate>
+      ${items}
     </channel>
   </rss>`;
   return c.body(rss, 200, {

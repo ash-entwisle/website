@@ -4,6 +4,7 @@ author: "author"
 link: "https://link.to.stuff"
 date: "todays-date"
 description: "tlde"
+tags: ["tag1", "tag2"]
 draft: true
 ---
 # Hello, World!
