@@ -5,20 +5,20 @@
     "build": "node ./src/build.ts",
     "dev:api": "wrangler dev -c src/services/api/wrangler.jsonc",
     "dev:cdn": "wrangler dev -c src/services/cdn/wrangler.jsonc",
-    "dev:root": "wrangler dev -c src/services/root/wrangler.jsonc",
+    "dev:redir": "wrangler dev -c src/services/redir/wrangler.jsonc",
     "dev:www": "wrangler dev -c src/services/www/wrangler.jsonc",
     "dev:links": "wrangler dev -c src/services/links/wrangler.jsonc",
     "deploy:api": "wrangler deploy -c src/services/api/wrangler.jsonc --minify",
     "deploy:cdn": "wrangler deploy -c src/services/cdn/wrangler.jsonc --minify",
-    "deploy:root": "wrangler deploy -c src/services/root/wrangler.jsonc --minify",
+    "deploy:redir": "wrangler deploy -c src/services/redir/wrangler.jsonc --minify",
     "deploy:www": "wrangler deploy -c src/services/www/wrangler.jsonc --minify",
     "deploy:links": "wrangler deploy -c src/services/links/wrangler.jsonc --minify",
     "preview:api": "wrangler preview -c src/services/api/wrangler.jsonc",
     "preview:cdn": "wrangler preview -c src/services/cdn/wrangler.jsonc",
-    "preview:root": "wrangler preview -c src/services/root/wrangler.jsonc",
+    "preview:redir": "wrangler preview -c src/services/redir/wrangler.jsonc",
     "preview:www": "wrangler preview -c src/services/www/wrangler.jsonc",
     "preview:links": "wrangler preview -c src/services/links/wrangler.jsonc",
-    "deploy": "npm run deploy:api && npm run deploy:cdn && npm run deploy:root && npm run deploy:www && npm run deploy:links"
+    "deploy": "npm run deploy:api && npm run deploy:cdn && npm run deploy:redir && npm run deploy:www && npm run deploy:links"
   },
   "dependencies": {
     "hono": "^4.13.16"
