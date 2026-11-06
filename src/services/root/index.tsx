@@ -9,6 +9,8 @@ const app = new Hono()
 
 
 app.get('/', (c) => {
+
+  // TODO: check if readme exists in the built blogpost ts object, if so, use the html as the homepage, if not, use h1 title and p description from conf.
   return c.text('Hello, world! This will soon be my new website!')
 })
 
@@ -16,7 +18,7 @@ app.get('/', (c) => {
 app.route('links', links);
 app.route('blog', blog);
 app.route('posts', posts);
-app.route('', rss)
+app.route('/', rss)
 
 
 

@@ -3,6 +3,6 @@ import redir from '../../utils/redir'
 
 const app = new Hono()
 
-app.route('', redir)
+app.route('/', redir)
 
 export default app

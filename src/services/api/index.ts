@@ -5,6 +5,6 @@ import motd from './motd'
 const app = new Hono()
 
 app.route('motd', motd)
-app.route('', redir)
+app.route('/', redir)
 
 export default app

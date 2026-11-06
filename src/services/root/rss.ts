@@ -3,9 +3,11 @@ import { Hono } from "hono"
 
 let app = new Hono();
 
-// generate a rss feed for the website
 
 app.get("/rss.xml", (c) => {
+
+  const tags = c.req.query("tags")?.split(",").map((t) => t.trim().toLowerCase()) ?? [];
+
   const rss = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
@@ -17,7 +19,9 @@ app.get("/rss.xml", (c) => {
       <pubDate>${new Date().toUTCString()}</pubDate>
     </channel>
   </rss>`;
-  return c.text(rss, "application/rss+xml");
+  return c.body(rss, 200, {
+    "Content-Type": "application/xml; charset=utf-8",
+  })
 });
 
 export default app;

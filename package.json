@@ -2,7 +2,6 @@
   "name": "website",
   "type": "module",
   "scripts": {
-
     "build": "node ./src/utils/buildgen.ts",
     "dev:api": "wrangler dev -c src/services/api/wrangler.jsonc",
     "dev:cdn": "wrangler dev -c src/services/cdn/wrangler.jsonc",
@@ -19,13 +18,13 @@
     "preview:root": "wrangler preview -c src/services/root/wrangler.jsonc",
     "preview:www": "wrangler preview -c src/services/www/wrangler.jsonc",
     "preview:links": "wrangler preview -c src/services/links/wrangler.jsonc",
-
     "deploy": "npm run deploy:api && npm run deploy:cdn && npm run deploy:root && npm run deploy:www && npm run deploy:links"
   },
   "dependencies": {
     "hono": "^4.13.16"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^5.20261104.1",
     "wrangler": "^4.110.0"
   }
 }

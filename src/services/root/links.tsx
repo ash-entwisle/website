@@ -6,9 +6,9 @@ let app = new Hono()
 
 // redirect all requests from here to links.baseurl/ljdfdkjfad.ffdasfdsafdsa
 
-app.get('*', (c) => {
-  const path = c.req.path
-  const newUrl = `https://${Config.website.base}${path}`
+app.get('/:link', (c) => {
+  const link = c.req.param('link')
+  const newUrl = `https://links.${Config.website.base}/${link}`
   return c.redirect(newUrl, 301)
 })
 
