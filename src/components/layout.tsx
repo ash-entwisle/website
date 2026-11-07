@@ -50,7 +50,7 @@ export const BaseLayout = ({
         <noscript>
           <link rel="stylesheet" href="styles.css" />
         </noscript>
-        <link rel="stylesheet" href="styles.css"/>
+        {/*<link rel="stylesheet" href="styles.css"/>*/}
 
         <title>{title}</title>
         <meta name="description" content={description} />
