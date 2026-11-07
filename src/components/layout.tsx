@@ -94,6 +94,49 @@ export const BaseLayout = ({
               margin-bottom: 15px;
 
               overflow: hidden;
+
+
+              .left {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                margin-right: 25px;
+
+                .logo {
+                  width: 125px;
+                  height: 125px;
+
+                  img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+              }
+
+              .right {
+                display: flex;
+                flex-direction: column;
+                /*justify content topl*/
+
+                justify-content: flex-start;
+                width: 100%;
+
+                .title {
+                  h1 {
+                    margin: 0;
+                    margin-bottom: 10px;
+
+                    padding-top: 25px;
+                  }
+                }
+
+                .links {
+                    a {
+                      margin-right: 10px;
+                    }
+                }
+              }
             }
 
             main {
