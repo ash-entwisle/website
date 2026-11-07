@@ -7,7 +7,7 @@ import posts from './posts'
 import rss from './rss'
 import { BlogPosts } from '../../utils/posts'
 import { BaseLayout } from '../../components/layout'
-import { Config } from '../../../config'
+import { Config } from '../../config'
 
 const app = new Hono()
 

@@ -1,6 +1,6 @@
 import { Hono } from 'hono'
 import redir from '../../utils/redir'
-import { Config } from '../../../config'
+import { Config } from '../../config'
 import { TLink } from '../../types/config'
 
 const app = new Hono()

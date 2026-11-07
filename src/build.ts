@@ -10,9 +10,9 @@ const outputDir = './src/utils'
 const outputFile = `${outputDir}/posts.ts`
 
 const files = fs.readdirSync(postsDir)
-  .filter(file => file.endsWith('.md'))
+  .filter((file: string) => file.endsWith('.md'))
 
-const posts = files.map(file => {
+const posts = files.map((file: string) => {
   const raw = fs.readFileSync(path.join(postsDir, file), 'utf8')
   const slug = file.replace(/\.md$/, '')
   const { data, content } = matter(raw)

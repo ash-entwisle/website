@@ -1,5 +1,5 @@
 import { memo } from "hono/jsx";
-import { Config } from "../../config";
+import { Config } from "../config";
 import { get_motd } from "../utils/motd";
 import { HeaderLinks } from "./header";
 

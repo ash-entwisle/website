@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { Config } from '../../../config';
+import { Config } from '../../config';
 
 const app = new Hono()
 

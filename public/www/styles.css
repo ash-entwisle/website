@@ -109,9 +109,9 @@
 
 /*Colour Stuff*/
 :root {
-    color: var(--col-fg-default);
-    background-color: var(--col-bg-muted);
-    border-color: var(--col-border-default);
+    color: var(--col-fg-default) !important;
+    background-color: var(--col-bg-default) !important;
+    border-color: var(--col-border-default) !important;
 }
 
 /*Elements*/
@@ -144,7 +144,7 @@
 }
 
 /*Page */
-/*:root {
+:root {
     min-height: 100vh;
     min-height: 100vh;
     margin: 0;
@@ -223,4 +223,4 @@
             }
         }
     }
-}*/
+}

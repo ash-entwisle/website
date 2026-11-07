@@ -1,7 +1,7 @@
 import { memo, PropsWithChildren } from "hono/jsx";
 import { BaseHeader } from "./header";
 import { BaseFooter } from "./footer";
-import { Config } from "../../config";
+import { Config } from "../config";
 import { raw } from "hono/html";
 import { css, Style } from "hono/css";
 
@@ -10,7 +10,7 @@ export const BasePreconnects = () => {
 
   return (
     <>
-      {Config.website.subdomains.map((subdomain) =>
+      {Config.website.subdomains.map((subdomain: string) =>
         pc(`https://${subdomain}.${Config.website.base}`),
       )}
       {pc(`https://${Config.website.base}`)}
@@ -50,6 +50,7 @@ export const BaseLayout = ({
         <noscript>
           <link rel="stylesheet" href="styles.css" />
         </noscript>
+        <link rel="stylesheet" href="styles.css"/>
 
         <title>{title}</title>
         <meta name="description" content={description} />
@@ -63,6 +64,7 @@ export const BaseLayout = ({
     <Style>
       {css`
         :root {
+
           min-height: 100vh;
           min-height: 100vh;
           margin: 0;
@@ -70,7 +72,10 @@ export const BaseLayout = ({
           display: flex;
           justify-content: center;
 
-          /*CSS Tree*/
+          color:  hsl(220, 11%, 71%);
+          background-color:  hsl(219, 13%, 18%);
+
+
           body {
             display: flex;
             flex-direction: column;

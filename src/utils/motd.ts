@@ -1,4 +1,4 @@
-import { Config } from "../../config";
+import { Config } from "../config";
 
 export async function get_motd(): Promise<string> {
   try {
