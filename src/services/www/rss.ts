@@ -1,5 +1,5 @@
 import { Hono } from "hono"
-import { posts } from "../../utils/posts";
+import { BlogPosts } from "../../utils/posts";
 
 
 let app = new Hono();
@@ -12,7 +12,7 @@ app.get("/rss.xml", (c) => {
 
   // get posts object from utils/posts.ts, filter by tags if any, and generate rss xml from it
 
-  const p = posts.filter((post) => {
+  const p = BlogPosts.filter((post) => {
     if (post.frontmatter.draft) return false;
     if (tags.length === 0) return true;
     const postTags = post.frontmatter.tags.map((t) => t.toLowerCase());

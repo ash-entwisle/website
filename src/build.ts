@@ -30,7 +30,7 @@ fs.mkdirSync(outputDir, { recursive: true })
 
 fs.writeFileSync(
   outputFile,
-  `export const posts = ${JSON.stringify(posts, null, 2)} as const`
+  `export const BlogPosts = ${JSON.stringify(posts, null, 2)} as const`
 )
 
 

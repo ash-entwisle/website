@@ -1,4 +1,4 @@
-export const posts = [
+export const BlogPosts = [
   {
     "slug": "homelab-1",
     "frontmatter": {
