@@ -12,8 +12,6 @@
     "jsxImportSource": "hono/jsx",
     // add node types for the build file only
 
-    "types": ["@cloudflare/workers-types",
-      "node"
-    ]
+    "types": ["@cloudflare/workers-types"]
   },
 }

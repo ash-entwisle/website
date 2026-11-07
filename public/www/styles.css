@@ -1,0 +1,195 @@
+@import url('https://proot.zip/styles/fa-icons.css');
+@import url('https://proot.zip/styles/jb-mono.css');
+
+/*Colours:*/
+:root {
+    /* Monochrome Colours */
+    --col-mono-1: hsl(220, 11%, 71%);
+    --col-mono-2: hsl(220, 10%, 62%);
+    --col-mono-3: hsl(220, 8%, 54%);
+    --col-mono-4: hsl(220, 9%, 45%);
+    --col-mono-5: hsl(221, 11%, 38%);
+    --col-mono-6: hsl(219, 12%, 28%);
+    --col-mono-7: hsl(220, 13%, 18%);
+    --col-mono-8: hsl(222, 15%, 13%);
+
+    /* Lighter Colours */
+    --col-light-1: hsl(0, 80%, 80%);
+    --col-light-2: hsl(13, 77%, 76%);
+    --col-light-3: hsl(34, 65%, 73%);
+    --col-light-4: hsl(96, 21%, 72%);
+    --col-light-5: hsl(187, 41%, 65%);
+    --col-light-6: hsl(207, 50%, 68%);
+    --col-light-7: hsl(233, 45%, 71%);
+    --col-light-8: hsl(286, 48%, 72%);
+
+    /* Normal Colours */
+    --col-normal-1: hsl(0, 79%, 64%);
+    --col-normal-2: hsl(13, 69%, 64%);
+    --col-normal-3: hsl(34, 72%, 64%);
+    --col-normal-4: hsl(96, 40%, 65%);
+    --col-normal-5: hsl(187, 50%, 47%);
+    --col-normal-6: hsl(187, 50%, 47%);
+    --col-normal-7: hsl(233, 60%, 67%);
+    --col-normal-8: hsl(286, 57%, 65%);
+
+    /* Darker Colours */
+    --col-dark-1: hsl(0, 87%, 59%);
+    --col-dark-2: hsl(13, 83%, 58%);
+    --col-dark-3: hsl(34, 82%, 59%);
+    --col-dark-4: hsl(96, 38%, 49%);
+    --col-dark-5: hsl(187, 63%, 38%);
+    --col-dark-6: hsl(207, 87%, 48%);
+    --col-dark-7: hsl(233, 74%, 59%);
+    --col-dark-8: hsl(286, 67%, 58%);
+
+    /* Foreground Colours */
+    --col-fg-default: var(--col-mono-1);
+    --col-fg-muted: var(--col-mono-2);
+    --col-fg-subtle: var(--col-mono-3);
+    --col-fg-onemph: var(--col-mono-1);
+
+    --col-fg-accent: var(--col-normal-4);
+    --col-fg-success: var(--col-normal-4);
+    --col-fg-attention: var(--col-normal-2);
+    --col-fg-danger: var(--col-normal-1);
+    --col-fg-open: var(--col-normal-4);
+    --col-fg-closed: var(--col-normal-1);
+    --col-fg-done: var(--col-normal-8);
+
+    /* Emphasis Colours */
+    --col-emph-default: var(--col-mono-2);
+    --col-emph-muted: var(--col-mono-3);
+    --col-emph-subtle: var(--col-mono-3);
+    --col-emph-onemph: var(--col-mono-1);
+
+    --col-emph-accent: var(--col-normal-4);
+    --col-emph-success: var(--col-normal-4);
+    --col-emph-attention: var(--col-normal-2);
+    --col-emph-danger: var(--col-normal-1);
+    --col-emph-open: var(--col-normal-4);
+    --col-emph-closed: var(--col-normal-1);
+    --col-emph-done: var(--col-normal-8);
+
+    /* Background Colours */
+    --col-bg-default: var(--col-mono-7);
+    --col-bg-muted: var(--col-mono-8);
+    --col-bg-subtle: var(--col-mono-8);
+    --col-bg-onemph: var(--col-mono-1);
+
+    --col-bg-accent: var(--col-dark-4);
+    --col-bg-success: var(--col-dark-4);
+    --col-bg-attention: var(--col-dark-2);
+    --col-bg-danger: var(--col-dark-1);
+    --col-bg-open: var(--col-dark-4);
+    --col-bg-closed: var(--col-dark-1);
+    --col-bg-done: var(--col-dark-8);
+
+    /* Border Colours */
+    --col-border-default: var(--col-mono-7);
+    --col-border-muted: var(--col-mono-8);
+    --col-border-subtle: var(--col-mono-7);
+    --col-border-onemph: var(--col-mono-1);
+
+    --col-border-accent: var(--col-normal-4);
+    --col-border-success: var(--col-normal-4);
+    --col-border-attention: var(--col-normal-2);
+    --col-border-danger: var(--col-normal-1);
+    --col-border-open: var(--col-normal-4);
+    --col-border-closed: var(--col-normal-1);
+    --col-border-done: var(--col-normal-8);
+}
+
+/*Fonts*/
+:root {
+
+    font-family: 'JetBrains Mono', 'Font Awesome 6 Free', 'Font Awesome 6 Brands';
+    font-size: 0.9em;
+    font-weight: 400;
+}
+
+/*Colour Stuff*/
+:root {
+    /*Colour stuff*/
+    color: var(--col-fg-default);
+    background-color: var(--col-bg-muted);
+    border-color: var(--col-border-default);
+}
+
+/*Elements*/
+:root {
+
+    a {
+        color: var(--col-fg-accent);
+        text-decoration: underline;
+        text-decoration-style: wavy;
+
+        transition: color 0.1s;
+        transition: text-decoration-style 0.1s;
+
+        &:hover {
+            text-decoration-style: solid;
+            color: var(--col-light-4);
+
+            transition: text-decoration-style 0.1s;
+            transition: color 0.1s;
+        }
+
+        &:active {
+            text-decoration: none;
+            color: var(--col-mono-1);
+        }
+
+        /*&:visited {
+            color: var(--col-mono-3);
+        }*/
+    }
+}
+
+/*Page */
+:root {
+    min-height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+
+    /*CSS Tree*/
+    body {
+        display: flex;
+        flex-direction: column;
+
+        margin: 0;
+
+        width: min(100% - 2rem, 600px);
+        min-width: 300px;
+
+        header {
+            display: flex;
+            flex-direction: row;
+            height: 125px;
+
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            overflow: hidden;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+
+            margin-top: 15px;
+            margin-bottom: 15px;
+
+            min-height: 60vh;
+
+        }
+
+        footer {
+
+            margin-top: 15px;
+        }
+    }
+}
