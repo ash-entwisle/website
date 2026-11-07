@@ -1,17 +1,15 @@
 import { memo } from "hono/jsx";
 import { Config } from "../../config";
 import { get_motd } from "../utils/motd";
+import { HeaderLinks } from "./header";
 
 export const FooterLinks = () => (
-  <span class="links">
-    <a href="https://links.entwisle.dev">linktree</a>
-    <a href="https://entwisle.dev/rss.xml">rss.xml</a>
-  </span>
+  <HeaderLinks />
 )
 
 export const FooterCopyright = () => (
   <span class="copyright">
-    <a href="https://entwisle.dev">Ash Entwisle</a> &copy; 2022- {new Date().getFullYear()};
+    <a href="https://entwisle.dev">Ash Entwisle</a> <span>&copy; 2022-{new Date().getFullYear()}</span>
   </span>
 )
 

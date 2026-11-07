@@ -14,13 +14,23 @@ export const HeaderTitle = ({title, description}: BaseHeader)  => (
   </div>
 );
 
-export const HeaderLinks = () => (
-  <div class="links">
-    <a href="/">\about</a>
-    <a href="/blog">\blog</a>
-    <a href="/links">\links</a>
-  </div>
-);
+export const HeaderLinks = () => {
+
+  const links = [
+    { href: "/", text: "\\about" },
+    { href: "/blog", text: "\\blog" },
+    { href: "/links", text: "\\links" },
+    { href: "/rss.xml", text: "\\rss.xml" },
+  ];
+
+  const helper = (href: string, text: string) => ( <a href={href}>{text}</a> );
+
+  return (
+    <span class="links">
+      { links.map((link) => helper(link.href, link.text)) }
+    </span>
+  );
+}
 
 type BaseHeader = {
   title?: string;
